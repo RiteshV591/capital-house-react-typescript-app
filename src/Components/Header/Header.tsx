@@ -3,8 +3,8 @@ import { Navbar } from "./Navbar";
 
 export const Header = () => {
   return (
-    <section>
-      <div>
+    <section className="h-screen bg-primary relative">
+      <div className="container mx-auto">
         <Navbar />
         <HeroSection />
       </div>

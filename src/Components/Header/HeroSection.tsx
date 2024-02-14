@@ -1,3 +1,3 @@
 export const HeroSection = () => {
-  return <div>Hero</div>;
+  return <div className="container mx-auto">Hero</div>;
 };
