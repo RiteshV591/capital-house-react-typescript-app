@@ -74,25 +74,25 @@ export const Navbar = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-200 hover:bg-gray-900 hover:bg-opacity-15 hover:text-white rounded-md px-3 py-2 text-base xl:text-lg font-medium"
+                className="text-gray-200 hover:bg-gray-800 hover:bg-opacity-15 hover:text-secondary hover:font-bold rounded-md px-3 py-2 text-base xl:text-lg font-medium"
               >
                 Feature
               </a>
               <a
                 href="#"
-                className="text-gray-200 hover:bg-gray-900 hover:bg-opacity-15 hover:text-white rounded-md px-3 py-2 text-base xl:text-lg font-medium"
+                className="text-gray-200 hover:bg-gray-800 hover:bg-opacity-15 hover:text-secondary hover:font-bold rounded-md px-3 py-2 text-base xl:text-lg font-medium"
               >
                 Service
               </a>
               <a
                 href="#"
-                className="text-gray-200 hover:bg-gray-900 hover:bg-opacity-15 hover:text-white rounded-md px-3 py-2 text-base xl:text-lg font-medium"
+                className="text-gray-200 hover:bg-gray-800 hover:bg-opacity-15 hover:text-secondary hover:font-bold rounded-md px-3 py-2 text-base xl:text-lg font-medium"
               >
                 Review
               </a>
               <a
                 href="#"
-                className="text-gray-200 hover:bg-gray-900 hover:bg-opacity-15 hover:text-white rounded-md px-3 py-2 text-base xl:text-lg font-medium"
+                className="text-gray-200 hover:bg-gray-800 hover:bg-opacity-15 hover:text-secondary hover:font-semibold rounded-md px-3 py-2 text-base xl:text-lg font-medium"
               >
                 Location
               </a>
@@ -101,7 +101,7 @@ export const Navbar = () => {
         </div>
 
         <div className="flex items-center">
-          <button className="transition-all delay-75 rounded-xl bg-white px-5 py-2 lg:px-8 2xl:px-10 text-gray-800 focus:outline-none xl:text-lg font-semibold hover:bg-slate-300 hover:text-gray-950 shadow-md hover:shadow-xl hover:scale-105 active:scale-100 active:shadow-lg">
+          <button className="transition-all delay-75 rounded-xl bg-white px-5 py-2 lg:px-8 2xl:px-10 text-gray-800 focus:outline-none xl:text-lg font-semibold hover:bg-secondary hover:text-white shadow-md hover:shadow-xl hover:scale-105 active:scale-100 active:shadow-lg">
             Login
           </button>
         </div>
@@ -118,19 +118,19 @@ export const Navbar = () => {
           </a>
           <a
             href="#"
-            className="text-gray-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            className="text-gray-800 hover:bg-gray-700 hover:font-semibold hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Feature
           </a>
           <a
             href="#"
-            className="text-gray-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            className="text-gray-800 hover:bg-gray-700 hover:font-semibold hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Service
           </a>
           <a
             href="#"
-            className="text-gray-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            className="text-gray-800 hover:bg-gray-700 hover:font-semibold hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Review
           </a>
