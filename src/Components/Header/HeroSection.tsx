@@ -12,10 +12,10 @@ export const HeroSection = () => {
             Trade on more than 200 re-owned markets
           </p>
           <div className="flex justify-between items-center gap-4 my-4">
-            <button className="transition-all delay-75 text-white border p-3 rounded-lg text-sm font-semibold  sm:text-base 2xl:text-lg sm:py-4 sm:px-8 xl:px-10 hover:scale-105 hover:bg-white hover:text-primary active:scale-100 hover:shadow-xl active:shadow-lg">
+            <button className="hero-btn text-white border sm:px-8 xl:px-10 hover:bg-white hover:text-primary">
               Book a Demo
             </button>
-            <button className="transition-all delay-75 text-primary bg-white p-3 rounded-lg text-sm font-semibold sm:text-base 2xl:text-lg sm:py-4 sm:px-12 xl:px-16 hover:scale-105 hover:bg-secondary hover:text-white active:scale-100 shadow-md hover:shadow-xl active:shadow-lg">
+            <button className="hero-btn text-primary bg-white sm:px-12 xl:px-16 hover:bg-secondary hover:text-white shadow-md">
               Join Now
             </button>
           </div>

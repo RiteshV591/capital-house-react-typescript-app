@@ -3,12 +3,16 @@ import { useState } from "react";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 pt-10 base:pt-12 2xl:pt-14 2xl:px-4 lg:flex-nowrap 2xl:max-w-screen-2xl">
         <div className="flex items-center base:hidden">
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={toggleMenu}
             type="button"
             className="transition-all delay-150 relative inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-controls="mobile-menu"
@@ -18,35 +22,9 @@ export const Navbar = () => {
             <span className="sr-only">Open main menu</span>
 
             {isOpen ? (
-              <svg
-                className="block h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <img src="close.svg" alt="cross" />
             ) : (
-              <svg
-                className="block h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
+              <img src="menu.svg" alt="menu" />
             )}
           </button>
         </div>
@@ -72,28 +50,16 @@ export const Navbar = () => {
               >
                 Home
               </a>
-              <a
-                href="#"
-                className="text-gray-200 hover:bg-gray-800 hover:bg-opacity-15 hover:text-secondary hover:font-bold rounded-md px-3 py-2 text-base xl:text-lg font-medium"
-              >
+              <a href="#" className="nav-link">
                 Feature
               </a>
-              <a
-                href="#"
-                className="text-gray-200 hover:bg-gray-800 hover:bg-opacity-15 hover:text-secondary hover:font-bold rounded-md px-3 py-2 text-base xl:text-lg font-medium"
-              >
+              <a href="#" className="nav-link">
                 Service
               </a>
-              <a
-                href="#"
-                className="text-gray-200 hover:bg-gray-800 hover:bg-opacity-15 hover:text-secondary hover:font-bold rounded-md px-3 py-2 text-base xl:text-lg font-medium"
-              >
+              <a href="#" className="nav-link">
                 Review
               </a>
-              <a
-                href="#"
-                className="text-gray-200 hover:bg-gray-800 hover:bg-opacity-15 hover:text-secondary hover:font-semibold rounded-md px-3 py-2 text-base xl:text-lg font-medium"
-              >
+              <a href="#" className="nav-link">
                 Location
               </a>
             </div>
@@ -116,28 +82,16 @@ export const Navbar = () => {
           >
             Home
           </a>
-          <a
-            href="#"
-            className="text-gray-800 hover:bg-gray-700 hover:font-semibold hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >
+          <a href="#" className="nav-link-mobile">
             Feature
           </a>
-          <a
-            href="#"
-            className="text-gray-800 hover:bg-gray-700 hover:font-semibold hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >
+          <a href="#" className="nav-link-mobile">
             Service
           </a>
-          <a
-            href="#"
-            className="text-gray-800 hover:bg-gray-700 hover:font-semibold hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >
+          <a href="#" className="nav-link-mobile">
             Review
           </a>
-          <a
-            href="#"
-            className="text-gray-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >
+          <a href="#" className="nav-link-mobile">
             Location
           </a>
         </div>
