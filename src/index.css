@@ -13,4 +13,8 @@
   .nav-link-mobile {
     @apply text-gray-800 hover:bg-gray-700 hover:font-semibold hover:text-white block rounded-md px-3 py-2 text-base font-medium;
   }
+
+  .play-btn {
+    @apply transition-all delay-75 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 hover:drop-shadow-xl active:scale-100;
+  }
 }
