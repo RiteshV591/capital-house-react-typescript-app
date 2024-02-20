@@ -3,7 +3,7 @@ import { FeatureListItem } from "./FeatureListItem";
 export const Features = () => {
   return (
     <section id="features">
-      <div className="container mx-auto">
+      <div className="container mx-auto my-16">
         <div className="flex flex-col p-8 gap-10 justify-evenly items-center base:flex-row base:gap-20 mb-10">
           <div className="max-w-[600px]">
             <img

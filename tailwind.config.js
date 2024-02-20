@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: "#5475F2",
         secondary: "#FFA800",
+        tertiary: "#359BC2",
         greyText: "#5E6282",
       },
       screens: {
