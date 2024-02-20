@@ -1,6 +1,6 @@
 export const Promotion = () => {
   return (
-    <section>
+    <section id="promotion">
       <div className="container mx-auto flex  justify-center relative">
         <div className="absolute -top-28 base:-top-36">
           <div className="relative m-11 max-w-[578px] max-h-[347px]  rounded-3xl">
@@ -16,7 +16,7 @@ export const Promotion = () => {
         </div>
 
         <div className="flex flex-col mt-60 sm:mt-80 my-14 base:flex-row justify-between items-center">
-          <div className="flex flex-col p-10 justify-center items-center text-center">
+          <div className="yt-promotion-card">
             <div className="relative max-w-[320px] max-h-[210px] rounded-3xl shadow-2xl">
               <img src="promotion/thumbnail-2.png" alt="video thumbnail" />
               <button className="play-btn">
@@ -41,7 +41,7 @@ export const Promotion = () => {
             </div>
           </div>
 
-          <div className="flex flex-col p-10 justify-center items-center text-center">
+          <div className="yt-promotion-card">
             <div className="relative  max-w-[320px] max-h-[210px] rounded-3xl shadow-2xl">
               <img src="promotion/thumbnail-3.png" alt="video thumbnail" />
               <button className="play-btn">
@@ -65,7 +65,7 @@ export const Promotion = () => {
             </div>
           </div>
 
-          <div className="flex flex-col p-10 justify-center items-center text-center">
+          <div className="yt-promotion-card">
             <div className="relative  max-w-[320px] max-h-[210px] rounded-3xl shadow-2xl">
               <img src="promotion/thumbnail-4.png" alt="video thumbnail" />
               <button className="play-btn">

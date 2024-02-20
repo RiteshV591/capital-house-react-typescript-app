@@ -8,13 +8,13 @@ export const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav id="navbar">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 pt-10 base:pt-12 2xl:pt-14 2xl:px-4 lg:flex-nowrap 2xl:max-w-screen-2xl">
         <div className="flex items-center base:hidden">
           <button
             onClick={toggleMenu}
             type="button"
-            className="transition-all delay-150 relative inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            className="hamburger-menu-btn"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
@@ -67,9 +67,7 @@ export const Navbar = () => {
         </div>
 
         <div className="flex items-center">
-          <button className="transition-all delay-75 rounded-xl bg-white px-5 py-2 lg:px-8 2xl:px-10 text-gray-800 focus:outline-none xl:text-lg font-semibold hover:bg-secondary hover:text-white shadow-md hover:shadow-xl hover:scale-105 active:scale-100 active:shadow-lg">
-            Login
-          </button>
+          <button className="login-btn">Login</button>
         </div>
       </div>
 

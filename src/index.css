@@ -3,18 +3,43 @@
 @tailwind utilities;
 
 @layer components {
-  .hero-btn {
-    @apply transition-all delay-75 p-3 rounded-lg text-sm font-semibold sm:text-base 2xl:text-lg sm:py-4 hover:scale-105 active:scale-100 hover:shadow-xl active:shadow-lg;
+  .hamburger-menu-btn {
+    @apply transition-all relative inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white;
+  }
+
+  .login-btn {
+    @apply transition-all rounded-xl bg-white px-5 py-2 lg:px-8 2xl:px-10 text-gray-800 focus:outline-none xl:text-lg font-semibold hover:bg-secondary hover:text-white shadow-md hover:shadow-xl hover:scale-105 active:scale-100 active:shadow-lg;
   }
 
   .nav-link {
     @apply text-gray-200 hover:bg-gray-800 hover:bg-opacity-15 hover:text-secondary hover:font-bold rounded-md px-3 py-2 text-base xl:text-lg font-medium;
   }
+
   .nav-link-mobile {
     @apply text-gray-800 hover:bg-gray-700 hover:font-semibold hover:text-white block rounded-md px-3 py-2 text-base font-medium;
   }
 
+  .hero-btn {
+    @apply transition-all p-3 rounded-lg text-sm font-semibold sm:text-base 2xl:text-lg sm:py-4 hover:scale-105 active:scale-100 hover:shadow-xl active:shadow-lg;
+  }
+
   .play-btn {
-    @apply transition-all delay-75 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 hover:drop-shadow-xl active:scale-100;
+    @apply transition-all absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:scale-105 hover:drop-shadow-xl active:scale-100;
+  }
+
+  .yt-promotion-card {
+    @apply flex flex-col p-10 justify-center items-center text-center;
+  }
+
+  .steps-circle {
+    @apply rounded-[50%] text-center flex justify-center items-center w-[160px] h-[160px] lg:w-[180px] lg:h-[180px] 2xl:w-[198px] 2xl:h-[198px] border-4 2xl:border-[5px] border-secondary font-bold text-white text-xl lg:text-2xl;
+  }
+
+  .steps-arrow-icon {
+    @apply rotate-90 md:rotate-0 text-secondary text-5xl base:text-6xl 2xl:text-7xl;
+  }
+
+  .feature-trading-btn {
+    @apply transition-all bg-primary text-white font-semibold p-4 xl:text-xl rounded-xl border border-primary hover:bg-white hover:text-primary shadow-lg hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100;
   }
 }

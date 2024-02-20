@@ -1,6 +1,6 @@
 export const HeroSection = () => {
   return (
-    <section>
+    <section id="hero-section">
       <div className="flex flex-col justify-between base:flex-row p-6">
         <div className="p-6 flex flex-col justify-center items-center text-center base:text-left  base:items-start 2xl:pl-0">
           <h1 className="text-5xl leading-tight sm:leading-tight xl:leading-tight sm:text-6xl xl:text-7xl  text-white font-extrabold w-auto max-w-[39rem]">
