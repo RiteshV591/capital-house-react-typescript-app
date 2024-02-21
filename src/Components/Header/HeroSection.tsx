@@ -20,7 +20,7 @@ export const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="max-h-[640px] max-w-[640px] flex justify-center items-center mx-auto 2xl:mx-16 ">
+        <div className="max-h-mh-min max-w-mw-min flex justify-center items-center mx-auto 2xl:mx-16 ">
           <img
             className="2xl:max-w-none 2xl:w-[35rem]"
             src="hero.svg"

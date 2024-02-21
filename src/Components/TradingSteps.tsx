@@ -2,7 +2,7 @@ export const TradingSteps = () => {
   return (
     <section
       id="trading-steps"
-      className="max-w-[1920px] mx-auto bg-cover relative mb-12"
+      className="max-w-mw-custom mx-auto bg-cover relative mb-12"
     >
       <img
         className="hidden md:block w-full h-auto"
