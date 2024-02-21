@@ -50,17 +50,17 @@ export const Navbar = () => {
               >
                 Home
               </a>
-              <a href="#" className="nav-link">
-                Feature
+              <a href="#promotion" className="nav-link">
+                Promotion
               </a>
-              <a href="#" className="nav-link">
-                Service
+              <a href="#trading-steps" className="nav-link">
+                Trading
               </a>
-              <a href="#" className="nav-link">
-                Review
+              <a href="#features" className="nav-link">
+                Features
               </a>
-              <a href="#" className="nav-link">
-                Location
+              <a href="#newsletter-section" className="nav-link">
+                News Letter
               </a>
             </div>
           </div>
@@ -80,17 +80,17 @@ export const Navbar = () => {
           >
             Home
           </a>
-          <a href="#" className="nav-link-mobile">
-            Feature
+          <a href="#promotion" className="nav-link-mobile">
+            Promotion
           </a>
-          <a href="#" className="nav-link-mobile">
-            Service
+          <a href="#trading-steps" className="nav-link-mobile">
+            Trading
           </a>
-          <a href="#" className="nav-link-mobile">
-            Review
+          <a href="#features" className="nav-link-mobile">
+            Features
           </a>
-          <a href="#" className="nav-link-mobile">
-            Location
+          <a href="#newsletter-section" className="nav-link-mobile">
+            News Letter
           </a>
         </div>
       </div>

@@ -25,10 +25,11 @@ export const PromotionCard = ({
         {title}
       </h2>
       <p className="text-greyText max-w-sm">{description}</p>
-      <div className="flex my-3 text-primary font-bold items-center justify-center">
-        <p className="hover:underline xl:text-lg cursor-pointer">
-          Know more <span className="text-3xl">&#8594;</span>
+      <div className=" flex my-3 text-primary font-bold items-center justify-center hover:gap-2 hover:transition-all hover:scale-105">
+        <p className="xl:text-lg cursor-pointer hover:underline hover:underline-offset-8">
+          Know more
         </p>
+        <span className="text-4xl mb-4">&#8594;</span>
       </div>
     </div>
   );
