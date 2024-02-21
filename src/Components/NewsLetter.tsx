@@ -1,6 +1,6 @@
 export const NewsLetter = () => {
   return (
-    <section id="newsletter-section" className="max-w-[1920px] mx-auto my-12">
+    <section id="newsletter-section" className="max-h-mh-custom mx-auto my-12">
       <div className="bg-primary flex flex-col justify-center items-center p-8 gap-10 base:flex-row">
         <img className="px-12 " src="news-letter.svg" alt="news-letter" />
         <div className="flex flex-col gap-8 text-center base:text-left">
