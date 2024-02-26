@@ -4,8 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#5475F2",
-        secondary: "#FFA800",
+        primary: "var(--bg-primary)",
+        secondary: "var(--bg-secondary)",
+        primaryWithOpacity: "var(--bg-primary-with-opacity)",
+        secondaryWithOpacity: "var(--bg-secondary-with-opacity)",
         tertiary: "#359BC2",
         greyText: "#5E6282",
       },

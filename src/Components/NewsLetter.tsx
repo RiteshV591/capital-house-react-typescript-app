@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export const NewsLetter = () => {
+  const [email, setEmail] = useState("");
+
   return (
     <section id="newsletter-section" className="max-w-mw-custom mx-auto my-12">
       <div className="bg-primary flex flex-col justify-center items-center p-8 gap-10 base:flex-row">
@@ -15,6 +19,8 @@ export const NewsLetter = () => {
               className="p-4 rounded-xl bg-transparent text-white placeholder-white border border-white text-lg focus:outline-none"
               type="email"
               placeholder="Enter your email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button className="transition-all bg-white rounded-xl p-2 sm:px-6 base:px-10 text-lg text-primary font-semibold hover:bg-secondary hover:text-white hover:scale-105 active:scale-100 drop-shadow-lg hover:drop-shadow-xl active:drop-shadow-md">
               Subscribe
