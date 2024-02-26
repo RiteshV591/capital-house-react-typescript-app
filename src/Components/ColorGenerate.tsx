@@ -2,33 +2,43 @@ import { useState, useEffect } from "react";
 
 export const ColorGenerate = () => {
   const [colors, setColors] = useState({
-    color1: "",
-    color2: "",
+    primary: "",
+    primaryWithOpacity: "",
+    secondary: "",
+    secondaryWithOpacity: "",
   });
 
   const fetchColors = async () => {
     try {
-      const response1 = await fetch(
-        `https://www.colr.org/json/color/random?query&timestamp=${new Date().getTime()}`
+      const timestamp = new Date().getTime();
+      const response = await fetch(
+        `https://www.colr.org/json/colors/random/2?timestamp=${timestamp}`
       );
 
-      const response2 = await fetch(
-        `https://www.colr.org/json/color/random?query&timestamp=${new Date().getTime()}`
-      );
-
-      if (!response1.ok || !response2.ok)
+      if (!response.ok) {
         throw new Error("Failed to fetch colors");
+      }
 
-      const data1 = await response1.json();
-      const data2 = await response2.json();
+      const data = await response.json();
 
-      if (!data1 || !data1.new_color || !data2 || !data2.new_color)
-        throw new Error("Color not found in response");
+      if (!data || !Array.isArray(data.colors) || data.colors.length < 2) {
+        throw new Error("Colors not found in response");
+      }
 
-      const newColor1 = `#${data1.new_color}`;
-      const newColor2 = `#${data2.new_color}`;
+      const [color1, color2] = [data.colors[0].hex, data.colors[1].hex];
 
-      setColors({ color1: newColor1, color2: newColor2 });
+      const primary = `#${color1}`;
+      const secondary = `#${color2}`;
+
+      const primaryWithOpacity = hexToRgbWithOpacity(color1, 0.8);
+      const secondaryWithOpacity = hexToRgbWithOpacity(color2, 0.8);
+
+      setColors({
+        primary,
+        primaryWithOpacity,
+        secondary,
+        secondaryWithOpacity,
+      });
     } catch (error) {
       console.error("Error fetching colors:", error);
     }
@@ -39,4 +49,15 @@ export const ColorGenerate = () => {
   }, []);
 
   return colors;
+};
+
+const hexToRgbWithOpacity = (hex: string, opacity: number) => {
+  hex = hex.replace("#", "");
+
+  const bigint = parseInt(hex, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+
+  return `rgba(${r}, ${g}, ${b}, ${opacity})`;
 };

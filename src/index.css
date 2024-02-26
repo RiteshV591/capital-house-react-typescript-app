@@ -6,6 +6,18 @@
   :root {
     --bg-primary: #5475f2;
     --bg-secondary: #ffa800;
+    --bg-primary-with-opacity: rgba(
+      84,
+      117,
+      242,
+      0.8
+    ); /* Opacity applied to primary color */
+    --bg-secondary-with-opacity: rgba(
+      255,
+      168,
+      0,
+      0.8
+    ); /* Opacity applied to secondary color */
   }
 }
 
