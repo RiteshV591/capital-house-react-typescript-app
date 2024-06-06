@@ -9,7 +9,7 @@ export const TradingSteps = () => {
         src="tradingsteps.png"
         alt="trading steps"
       />
-      <div className="bg-primary md:bg-opacity-80 md:absolute md:top-0 w-full h-full flex flex-col justify-center items-center p-12 gap-10 lg:gap-14 xl:gap-20 2xl:gap-36">
+      <div className="bg-primary md:bg-primaryWithOpacity md:bg-opacity-80 md:absolute md:top-0 w-full h-full flex flex-col justify-center items-center p-12 gap-10 lg:gap-14 xl:gap-20 2xl:gap-36">
         <h1 className="text-2xl text-white font-semibold text-center base:text-3xl xl:text-4xl 2xl:text-5xl">
           <span className="text-secondary">Capital House</span> Steps for
           Blockchain Sukuk Trading
